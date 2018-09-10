@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/aaronbjork/ReactDeploy/_apis/build/status/aaronbjork.tgsc-react)](https://dev.azure.com/aaronbjork/ReactDeploy/_build/latest?definitionId=35)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
