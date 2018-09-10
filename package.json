@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "test": "./node_modules/.bin/mocha --recursive --reporter=mocha-multi-reporters",
+    "test": "./node_modules/.bin/mocha --recursive --reporter=mocha-multi-reporters",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
