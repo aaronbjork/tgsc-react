@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to tgsc-react!</h1>
         </header>
         <p className="App-intro">
-          A react based scorecard. To get started, edit <code>src/App.js</code> and save to reload.
+          A react based scorecard. Try it out!
         </p>
       </div>
     );
