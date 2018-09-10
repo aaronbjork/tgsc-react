@@ -7,10 +7,13 @@
     "react-dom": "^16.5.0",
     "react-scripts": "1.1.5"
   },
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "mocha",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
