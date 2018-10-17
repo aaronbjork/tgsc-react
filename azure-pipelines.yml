@@ -18,7 +18,10 @@ steps:
     npm test
   displayName: 'npm install, build, and test'
   
-  - task: ArchiveFiles@2
+- task: AzureRmWebAppDeployment@3
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-    includeRootFolder: false
+    azureSubscription: 'tgsc-react connection'
+    WebAppName: 'tgsc-react'
+    Package: '$(System.DefaultWorkingDirectory)'
+    GenerateWebConfig: true
+    WebConfigParameters: '-Handler iisnode -NodeStartFile server.js -appType node'
