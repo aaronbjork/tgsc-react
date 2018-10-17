@@ -17,3 +17,8 @@ steps:
     npm run build
     npm test
   displayName: 'npm install, build, and test'
+  
+  - task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
