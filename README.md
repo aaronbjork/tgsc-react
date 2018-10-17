@@ -1,6 +1,6 @@
 [![Build Status](https://dev.azure.com/aaronbjork/ReactDeploy/_apis/build/status/aaronbjork.tgsc-react)](https://dev.azure.com/aaronbjork/ReactDeploy/_build/latest?definitionId=35)
 
-Adding something else new here.
+Adding something else new here. Another.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
