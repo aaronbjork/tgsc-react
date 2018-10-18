@@ -24,4 +24,4 @@ steps:
     WebAppName: 'tgsc-blank'
     Package: '$(System.DefaultWorkingDirectory)'
     GenerateWebConfig: true
-    WebConfigParameters: '-Handler iisnode -NodeStartFile src/app.js -appType node'
+    WebConfigParameters: '-Handler iisnode -NodeStartFile app.js -appType node'
