@@ -8,25 +8,35 @@ class ScorecardList extends Component {
     return (
       <div className="ScorecardList">
         <AddGreeter addGreeting={this.addGreeting} />
-        {this.renderGreetings()}}
+        {this.renderGreetings()}
       </div>
     );
   }
 
   constructor(props) {
     super(props);
-    this.state = { greetings: ['Tim', 'Sue', 'Rachael', 'Ben'] };
+    this.state = { names: ['a', 'b'] };
     this.addGreeting = this.addGreeting.bind(this);
   }
 
+  async componentDidMount() {
+    const url = "https://topgunapi.azurewebsites.net/api/course/6";  // https://topgunapi.azurewebsites.net/api/course/6, https://randomuser.me/api/?results=2
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+
+
+  }
+
+
   renderGreetings() {
-    return this.state.greetings.map(name => (
+    return this.state.names.map(name => (
       <Scorecard key={name} name={name}/>
     ));
   }
 
   addGreeting(newName) {
-    this.setState({ greetings: [...this.state.greetings, newName] });
+    this.setState({ greetings: [...this.state.names, newName] });
   }
 }
 
