@@ -23,5 +23,5 @@ steps:
     azureSubscription: 'tgsc-react connection'
     WebAppName: 'tgsc-blank'
     Package: '$(System.DefaultWorkingDirectory)'
-    GenerateWebConfig: true
+    GenerateWebConfig: false
     WebConfigParameters: '-Handler iisnode -NodeStartFile app.js -appType node'
