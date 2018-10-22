@@ -20,7 +20,7 @@ class ScorecardList extends Component {
   }
 
   async componentDidMount() {
-    const url = "https://topgunapi.azurewebsites.net/api/course/6";  // https://topgunapi.azurewebsites.net/api/course/6, https://randomuser.me/api/?results=2
+    const url = "https://tgsc-api.azurewebsites.net/api/values";  // https://topgunapi.azurewebsites.net/api/course/6, https://randomuser.me/api/?results=2
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
